@@ -40,4 +40,5 @@ check when compiling kernel：
 - `x86_64`: page tables in `x86_64`
     - `kernel_all_page_tables`: exported by `dump_all_pagetables.c` when the pgd points to `&init_level4_pgt`(`x86_64`) or `swapper_pg_dir`(`x86_32`) 
     - `kernel_all_user_page_tables`: exported by `dump_all_pagetables.c` when the pgd points to `current->mm->pgd`
-- - `x86_32`: page tables in `x86_32`
+    - `kernel_page_tables`: exported by `dump_pagetables.c` when the pgd points to `&init_level4_pgt`(`x86_64`) or `swapper_pg_dir`(`x86_32`)
+- `x86_32`: page tables in `x86_32`
