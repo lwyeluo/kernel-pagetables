@@ -1,0 +1,523 @@
+---[ User Space ]---
+0x00000000-0xc0000000           3G                               pgd
+---[ Kernel Mapping ]---
+0xc0000000-0xc009a000         616K     RW                 GLB NX pte
+0xc009a000-0xc009b000           4K     ro                 GLB NX pte
+0xc009b000-0xc009c000           4K     ro                 GLB x  pte
+0xc009c000-0xc0200000        1424K     RW                 GLB NX pte
+0xc0200000-0xc1000000          14M     RW         PSE     GLB NX pmd
+0xc1000000-0xc1600000           6M     ro         PSE     GLB x  pmd
+0xc1600000-0xc17c4000        1808K     ro                 GLB x  pte
+0xc17c4000-0xc1800000         240K     ro                 GLB NX pte
+0xc1800000-0xc1a00000           2M     ro         PSE     GLB NX pmd
+0xc1a00000-0xc1aaf000         700K     ro                 GLB NX pte
+0xc1aaf000-0xc1e00000        3396K     RW                 GLB NX pte
+0xc1e00000-0xeee00000         720M     RW         PSE     GLB NX pmd
+0xeee00000-0xeef2b000        1196K     RW                 GLB NX pte
+0xeef2b000-0xeef2c000           4K     RW     PCD         GLB NX pte
+0xeef2c000-0xeefc0000         592K     RW                 GLB NX pte
+0xeefc0000-0xef000000         256K     RW     PCD         GLB NX pte
+0xef000000-0xefe00000          14M     RW         PSE     GLB NX pmd
+0xefe00000-0xeff01000        1028K     RW                 GLB NX pte
+0xeff01000-0xeff02000           4K     ro                 GLB NX pte
+0xeff02000-0xf0000000        1016K     RW                 GLB NX pte
+0xf0000000-0xf7a00000         122M     RW         PSE     GLB NX pmd
+0xf7a00000-0xf7bfe000        2040K     RW                 GLB NX pte
+0xf7bfe000-0xf7c00000           8K                               pte
+0xf7c00000-0xf8200000           6M                               pmd
+0xf8200000-0xf83fe000        2040K                               pte
+---[ vmalloc() Area ]---
+0xf83fe000-0xf83ff000           4K     RW     PCD         GLB NX pte
+0xf83ff000-0xf8400000           4K                               pte
+0xf8400000-0xf8421000         132K     RW                 GLB NX pte
+0xf8421000-0xf8422000           4K                               pte
+0xf8422000-0xf8423000           4K     ro                 GLB NX pte
+0xf8423000-0xf8424000           4K                               pte
+0xf8424000-0xf8425000           4K     RW                 GLB NX pte
+0xf8425000-0xf8426000           4K                               pte
+0xf8426000-0xf8427000           4K     RW                 GLB NX pte
+0xf8427000-0xf8428000           4K                               pte
+0xf8428000-0xf8429000           4K     RW     PCD         GLB NX pte
+0xf8429000-0xf842a000           4K                               pte
+0xf842a000-0xf842b000           4K     RW                 GLB NX pte
+0xf842b000-0xf843b000          64K                               pte
+0xf843b000-0xf843f000          16K     RW                 GLB NX pte
+0xf843f000-0xf8440000           4K                               pte
+0xf8440000-0xf8441000           4K     RW     PCD         GLB NX pte
+0xf8441000-0xf8442000           4K                               pte
+0xf8442000-0xf8443000           4K     RW     PCD         GLB NX pte
+0xf8443000-0xf8444000           4K                               pte
+0xf8444000-0xf8445000           4K     RW                 GLB NX pte
+0xf8445000-0xf8446000           4K                               pte
+0xf8446000-0xf8453000          52K     ro                 GLB x  pte
+0xf8453000-0xf845a000          28K     ro                 GLB NX pte
+0xf845a000-0xf845d000          12K     RW                 GLB NX pte
+0xf845d000-0xf845e000           4K                               pte
+0xf845e000-0xf845f000           4K     ro                 GLB x  pte
+0xf845f000-0xf8460000           4K     ro                 GLB NX pte
+0xf8460000-0xf8462000           8K     RW                 GLB NX pte
+0xf8462000-0xf8463000           4K                               pte
+0xf8463000-0xf8467000          16K     ro                 GLB x  pte
+0xf8467000-0xf8468000           4K     ro                 GLB NX pte
+0xf8468000-0xf846b000          12K     RW                 GLB NX pte
+0xf846b000-0xf846c000           4K                               pte
+0xf846c000-0xf846d000           4K     ro                 GLB NX pte
+0xf846d000-0xf846e000           4K                               pte
+0xf846e000-0xf846f000           4K     ro                 GLB NX pte
+0xf846f000-0xf8470000           4K                               pte
+0xf8470000-0xf8472000           8K     ro                 GLB x  pte
+0xf8472000-0xf8477000          20K     ro                 GLB NX pte
+0xf8477000-0xf8479000           8K     RW                 GLB NX pte
+0xf8479000-0xf847a000           4K                               pte
+0xf847a000-0xf847b000           4K     ro                 GLB x  pte
+0xf847b000-0xf847c000           4K     ro                 GLB NX pte
+0xf847c000-0xf847e000           8K     RW                 GLB NX pte
+0xf847e000-0xf8480000           8K                               pte
+0xf8480000-0xf8481000           4K     RW     PCD         GLB NX pte
+0xf8481000-0xf8482000           4K                               pte
+0xf8482000-0xf8485000          12K     ro                 GLB x  pte
+0xf8485000-0xf8486000           4K     ro                 GLB NX pte
+0xf8486000-0xf8488000           8K     RW                 GLB NX pte
+0xf8488000-0xf8489000           4K                               pte
+0xf8489000-0xf848a000           4K     ro                 GLB NX pte
+0xf848a000-0xf848b000           4K                               pte
+0xf848b000-0xf848c000           4K     RW                 GLB NX pte
+0xf848c000-0xf848d000           4K                               pte
+0xf848d000-0xf8490000          12K     ro                 GLB x  pte
+0xf8490000-0xf8491000           4K     ro                 GLB NX pte
+0xf8491000-0xf8494000          12K     RW                 GLB NX pte
+0xf8494000-0xf8495000           4K                               pte
+0xf8495000-0xf8499000          16K     RW                 GLB NX pte
+0xf8499000-0xf849a000           4K                               pte
+0xf849a000-0xf849d000          12K     ro                 GLB x  pte
+0xf849d000-0xf849e000           4K     ro                 GLB NX pte
+0xf849e000-0xf84a0000           8K     RW                 GLB NX pte
+0xf84a0000-0xf84a1000           4K                               pte
+0xf84a1000-0xf84a6000          20K     ro                 GLB x  pte
+0xf84a6000-0xf84a8000           8K     ro                 GLB NX pte
+0xf84a8000-0xf84ab000          12K     RW                 GLB NX pte
+0xf84ab000-0xf84ac000           4K                               pte
+0xf84ac000-0xf84b1000          20K     ro                 GLB x  pte
+0xf84b1000-0xf84b3000           8K     ro                 GLB NX pte
+0xf84b3000-0xf84b6000          12K     RW                 GLB NX pte
+0xf84b6000-0xf84b7000           4K                               pte
+0xf84b7000-0xf84b8000           4K     ro                 GLB NX pte
+0xf84b8000-0xf84ba000           8K                               pte
+0xf84ba000-0xf84bb000           4K     ro                 GLB x  pte
+0xf84bb000-0xf84bc000           4K     ro                 GLB NX pte
+0xf84bc000-0xf84be000           8K     RW                 GLB NX pte
+0xf84be000-0xf84bf000           4K                               pte
+0xf84bf000-0xf84c0000           4K     ro                 GLB NX pte
+0xf84c0000-0xf84c2000           8K                               pte
+0xf84c2000-0xf84d6000          80K     ro                 GLB x  pte
+0xf84d6000-0xf84db000          20K     ro                 GLB NX pte
+0xf84db000-0xf84e1000          24K     RW                 GLB NX pte
+0xf84e1000-0xf84e2000           4K                               pte
+0xf84e2000-0xf84e3000           4K     ro                 GLB NX pte
+0xf84e3000-0xf84e4000           4K                               pte
+0xf84e4000-0xf84e5000           4K     ro                 GLB NX pte
+0xf84e5000-0xf84e6000           4K                               pte
+0xf84e6000-0xf84e7000           4K     ro                 GLB x  pte
+0xf84e7000-0xf84e8000           4K     ro                 GLB NX pte
+0xf84e8000-0xf84ea000           8K     RW                 GLB NX pte
+0xf84ea000-0xf84eb000           4K                               pte
+0xf84eb000-0xf84ef000          16K     ro                 GLB x  pte
+0xf84ef000-0xf84f0000           4K     ro                 GLB NX pte
+0xf84f0000-0xf84f2000           8K     RW                 GLB NX pte
+0xf84f2000-0xf84f3000           4K                               pte
+0xf84f3000-0xf84f7000          16K     ro                 GLB x  pte
+0xf84f7000-0xf84fa000          12K     ro                 GLB NX pte
+0xf84fa000-0xf84fd000          12K     RW                 GLB NX pte
+0xf84fd000-0xf84fe000           4K                               pte
+0xf84fe000-0xf84ff000           4K     ro                 GLB NX pte
+0xf84ff000-0xf8500000           4K                               pte
+0xf8500000-0xf8520000         128K     RW     PCD         GLB NX pte
+0xf8520000-0xf8521000           4K                               pte
+0xf8521000-0xf8522000           4K     ro                 GLB x  pte
+0xf8522000-0xf8523000           4K     ro                 GLB NX pte
+0xf8523000-0xf8525000           8K     RW                 GLB NX pte
+0xf8525000-0xf8526000           4K                               pte
+0xf8526000-0xf8527000           4K     ro                 GLB NX pte
+0xf8527000-0xf8528000           4K                               pte
+0xf8528000-0xf8529000           4K     ro                 GLB x  pte
+0xf8529000-0xf852a000           4K     ro                 GLB NX pte
+0xf852a000-0xf852c000           8K     RW                 GLB NX pte
+0xf852c000-0xf852e000           8K                               pte
+0xf852e000-0xf852f000           4K     RW     PCD         GLB NX pte
+0xf852f000-0xf8530000           4K                               pte
+0xf8530000-0xf8537000          28K     ro                 GLB x  pte
+0xf8537000-0xf8539000           8K     ro                 GLB NX pte
+0xf8539000-0xf853c000          12K     RW                 GLB NX pte
+0xf853c000-0xf853d000           4K                               pte
+0xf853d000-0xf8541000          16K     RW                 GLB NX pte
+0xf8541000-0xf8543000           8K                               pte
+0xf8543000-0xf8554000          68K     ro                 GLB x  pte
+0xf8554000-0xf8559000          20K     ro                 GLB NX pte
+0xf8559000-0xf8563000          40K     RW                 GLB NX pte
+0xf8563000-0xf8564000           4K                               pte
+0xf8564000-0xf8566000           8K     ro                 GLB x  pte
+0xf8566000-0xf8567000           4K     ro                 GLB NX pte
+0xf8567000-0xf8569000           8K     RW                 GLB NX pte
+0xf8569000-0xf856a000           4K                               pte
+0xf856a000-0xf856c000           8K     ro                 GLB x  pte
+0xf856c000-0xf856d000           4K     ro                 GLB NX pte
+0xf856d000-0xf856f000           8K     RW                 GLB NX pte
+0xf856f000-0xf8570000           4K                               pte
+0xf8570000-0xf8583000          76K     ro                 GLB x  pte
+0xf8583000-0xf8588000          20K     ro                 GLB NX pte
+0xf8588000-0xf858d000          20K     RW                 GLB NX pte
+0xf858d000-0xf858e000           4K                               pte
+0xf858e000-0xf8592000          16K     RW                 GLB NX pte
+0xf8592000-0xf8593000           4K                               pte
+0xf8593000-0xf8594000           4K     ro                 GLB NX pte
+0xf8594000-0xf8595000           4K                               pte
+0xf8595000-0xf8596000           4K     ro                 GLB NX pte
+0xf8596000-0xf8597000           4K                               pte
+0xf8597000-0xf8598000           4K     ro                 GLB x  pte
+0xf8598000-0xf8599000           4K     ro                 GLB NX pte
+0xf8599000-0xf859b000           8K     RW                 GLB NX pte
+0xf859b000-0xf859c000           4K                               pte
+0xf859c000-0xf85bb000         124K     ro                 GLB x  pte
+0xf85bb000-0xf85c5000          40K     ro                 GLB NX pte
+0xf85c5000-0xf85ce000          36K     RW                 GLB NX pte
+0xf85ce000-0xf85cf000           4K                               pte
+0xf85cf000-0xf85d7000          32K     ro                 GLB x  pte
+0xf85d7000-0xf85d9000           8K     ro                 GLB NX pte
+0xf85d9000-0xf85db000           8K     RW                 GLB NX pte
+0xf85db000-0xf85dc000           4K                               pte
+0xf85dc000-0xf85e0000          16K     ro                 GLB x  pte
+0xf85e0000-0xf85e2000           8K     ro                 GLB NX pte
+0xf85e2000-0xf85e4000           8K     RW                 GLB NX pte
+0xf85e4000-0xf85e5000           4K                               pte
+0xf85e5000-0xf85e7000           8K     ro                 GLB x  pte
+0xf85e7000-0xf85e8000           4K     ro                 GLB NX pte
+0xf85e8000-0xf85ea000           8K     RW                 GLB NX pte
+0xf85ea000-0xf85eb000           4K                               pte
+0xf85eb000-0xf85ec000           4K     ro                 GLB x  pte
+0xf85ec000-0xf85ed000           4K     ro                 GLB NX pte
+0xf85ed000-0xf85ef000           8K     RW                 GLB NX pte
+0xf85ef000-0xf85f0000           4K                               pte
+0xf85f0000-0xf85f4000          16K     ro                 GLB x  pte
+0xf85f4000-0xf85f5000           4K     ro                 GLB NX pte
+0xf85f5000-0xf85f7000           8K     RW                 GLB NX pte
+0xf85f7000-0xf85f8000           4K                               pte
+0xf85f8000-0xf85f9000           4K     ro                 GLB x  pte
+0xf85f9000-0xf85fa000           4K     ro                 GLB NX pte
+0xf85fa000-0xf85fc000           8K     RW                 GLB NX pte
+0xf85fc000-0xf85fd000           4K                               pte
+0xf85fd000-0xf85ff000           8K     RW                 GLB NX pte
+0xf85ff000-0xf8600000           4K                               pte
+0xf8600000-0xf8640000         256K     RW     PCD         GLB NX pte
+0xf8640000-0xf8641000           4K                               pte
+0xf8641000-0xf8643000           8K     ro                 GLB x  pte
+0xf8643000-0xf8644000           4K     ro                 GLB NX pte
+0xf8644000-0xf8646000           8K     RW                 GLB NX pte
+0xf8646000-0xf8647000           4K                               pte
+0xf8647000-0xf8649000           8K     ro                 GLB x  pte
+0xf8649000-0xf864a000           4K     ro                 GLB NX pte
+0xf864a000-0xf864c000           8K     RW                 GLB NX pte
+0xf864c000-0xf864d000           4K                               pte
+0xf864d000-0xf864e000           4K     ro                 GLB x  pte
+0xf864e000-0xf864f000           4K     ro                 GLB NX pte
+0xf864f000-0xf8651000           8K     RW                 GLB NX pte
+0xf8651000-0xf8652000           4K                               pte
+0xf8652000-0xf8653000           4K     ro                 GLB x  pte
+0xf8653000-0xf8654000           4K     ro                 GLB NX pte
+0xf8654000-0xf8656000           8K     RW                 GLB NX pte
+0xf8656000-0xf8657000           4K                               pte
+0xf8657000-0xf8659000           8K     ro                 GLB x  pte
+0xf8659000-0xf865a000           4K     ro                 GLB NX pte
+0xf865a000-0xf865c000           8K     RW                 GLB NX pte
+0xf865c000-0xf865d000           4K                               pte
+0xf865d000-0xf865e000           4K     ro                 GLB x  pte
+0xf865e000-0xf865f000           4K     ro                 GLB NX pte
+0xf865f000-0xf8661000           8K     RW                 GLB NX pte
+0xf8661000-0xf8662000           4K                               pte
+0xf8662000-0xf8664000           8K     ro                 GLB x  pte
+0xf8664000-0xf8665000           4K     ro                 GLB NX pte
+0xf8665000-0xf8667000           8K     RW                 GLB NX pte
+0xf8667000-0xf8668000           4K                               pte
+0xf8668000-0xf8669000           4K     RW                 GLB NX pte
+0xf8669000-0xf866a000           4K                               pte
+0xf866a000-0xf866b000           4K     ro                 GLB NX pte
+0xf866b000-0xf866c000           4K                               pte
+0xf866c000-0xf866d000           4K     ro                 GLB x  pte
+0xf866d000-0xf866e000           4K     ro                 GLB NX pte
+0xf866e000-0xf8670000           8K     RW                 GLB NX pte
+0xf8670000-0xf8671000           4K                               pte
+0xf8671000-0xf8672000           4K     ro                 GLB x  pte
+0xf8672000-0xf8673000           4K     ro                 GLB NX pte
+0xf8673000-0xf8675000           8K     RW                 GLB NX pte
+0xf8675000-0xf8676000           4K                               pte
+0xf8676000-0xf8677000           4K     ro                 GLB x  pte
+0xf8677000-0xf8678000           4K     ro                 GLB NX pte
+0xf8678000-0xf867a000           8K     RW                 GLB NX pte
+0xf867a000-0xf867b000           4K                               pte
+0xf867b000-0xf867c000           4K     ro                 GLB x  pte
+0xf867c000-0xf867d000           4K     ro                 GLB NX pte
+0xf867d000-0xf867f000           8K     RW                 GLB NX pte
+0xf867f000-0xf8680000           4K                               pte
+0xf8680000-0xf8683000          12K     ro                 GLB x  pte
+0xf8683000-0xf8684000           4K     ro                 GLB NX pte
+0xf8684000-0xf8687000          12K     RW                 GLB NX pte
+0xf8687000-0xf8688000           4K                               pte
+0xf8688000-0xf8689000           4K     RW                 GLB NX pte
+0xf8689000-0xf868b000           8K                               pte
+0xf868b000-0xf8694000          36K     ro                 GLB x  pte
+0xf8694000-0xf8696000           8K     ro                 GLB NX pte
+0xf8696000-0xf869a000          16K     RW                 GLB NX pte
+0xf869a000-0xf869b000           4K                               pte
+0xf869b000-0xf869f000          16K     ro                 GLB x  pte
+0xf869f000-0xf86a1000           8K     ro                 GLB NX pte
+0xf86a1000-0xf86a3000           8K     RW                 GLB NX pte
+0xf86a3000-0xf86a5000           8K                               pte
+0xf86a5000-0xf86af000          40K     ro                 GLB x  pte
+0xf86af000-0xf86b8000          36K     ro                 GLB NX pte
+0xf86b8000-0xf86bd000          20K     RW                 GLB NX pte
+0xf86bd000-0xf86be000           4K                               pte
+0xf86be000-0xf86bf000           4K     ro                 GLB x  pte
+0xf86bf000-0xf86c0000           4K     ro                 GLB NX pte
+0xf86c0000-0xf86c2000           8K     RW                 GLB NX pte
+0xf86c2000-0xf86c3000           4K                               pte
+0xf86c3000-0xf86c6000          12K     ro                 GLB x  pte
+0xf86c6000-0xf86c7000           4K     ro                 GLB NX pte
+0xf86c7000-0xf86c9000           8K     RW                 GLB NX pte
+0xf86c9000-0xf86cb000           8K                               pte
+0xf86cb000-0xf86cc000           4K     ro                 GLB x  pte
+0xf86cc000-0xf86cd000           4K     ro                 GLB NX pte
+0xf86cd000-0xf86cf000           8K     RW                 GLB NX pte
+0xf86cf000-0xf86d0000           4K                               pte
+0xf86d0000-0xf86d3000          12K     RW                 GLB NX pte
+0xf86d3000-0xf86d4000           4K                               pte
+0xf86d4000-0xf86d8000          16K     RW                 GLB NX pte
+0xf86d8000-0xf86da000           8K                               pte
+0xf86da000-0xf86eb000          68K     RW                 GLB NX pte
+0xf86eb000-0xf86ec000           4K                               pte
+0xf86ec000-0xf86f4000          32K     ro                 GLB x  pte
+0xf86f4000-0xf86f6000           8K     ro                 GLB NX pte
+0xf86f6000-0xf86fc000          24K     RW                 GLB NX pte
+0xf86fc000-0xf86fd000           4K                               pte
+0xf86fd000-0xf8701000          16K     RW                 GLB NX pte
+0xf8701000-0xf8702000           4K                               pte
+0xf8702000-0xf8708000          24K     RW                 GLB NX pte
+0xf8708000-0xf8709000           4K                               pte
+0xf8709000-0xf870c000          12K     RW                 GLB NX pte
+0xf870c000-0xf870d000           4K                               pte
+0xf870d000-0xf870e000           4K     ro                 GLB NX pte
+0xf870e000-0xf870f000           4K                               pte
+0xf870f000-0xf8710000           4K     ro                 GLB NX pte
+0xf8710000-0xf8711000           4K                               pte
+0xf8711000-0xf871c000          44K     ro                 GLB x  pte
+0xf871c000-0xf8725000          36K     ro                 GLB NX pte
+0xf8725000-0xf872b000          24K     RW                 GLB NX pte
+0xf872b000-0xf872d000           8K                               pte
+0xf872d000-0xf8735000          32K     ro                 GLB x  pte
+0xf8735000-0xf8737000           8K     ro                 GLB NX pte
+0xf8737000-0xf873b000          16K     RW                 GLB NX pte
+0xf873b000-0xf873c000           4K                               pte
+0xf873c000-0xf873e000           8K     ro                 GLB x  pte
+0xf873e000-0xf873f000           4K     ro                 GLB NX pte
+0xf873f000-0xf8741000           8K     RW                 GLB NX pte
+0xf8741000-0xf8742000           4K                               pte
+0xf8742000-0xf8746000          16K     RW                 GLB NX pte
+0xf8746000-0xf8748000           8K                               pte
+0xf8748000-0xf874c000          16K     ro                 GLB x  pte
+0xf874c000-0xf874d000           4K     ro                 GLB NX pte
+0xf874d000-0xf874f000           8K     RW                 GLB NX pte
+0xf874f000-0xf8750000           4K                               pte
+0xf8750000-0xf8753000          12K     ro                 GLB x  pte
+0xf8753000-0xf8754000           4K     ro                 GLB NX pte
+0xf8754000-0xf8758000          16K     RW                 GLB NX pte
+0xf8758000-0xf8759000           4K                               pte
+0xf8759000-0xf875a000           4K     ro                 GLB NX pte
+0xf875a000-0xf875b000           4K                               pte
+0xf875b000-0xf875c000           4K     ro                 GLB NX pte
+0xf875c000-0xf875d000           4K                               pte
+0xf875d000-0xf875e000           4K     ro                 GLB NX pte
+0xf875e000-0xf8760000           8K                               pte
+0xf8760000-0xf876b000          44K     ro                 GLB x  pte
+0xf876b000-0xf876e000          12K     ro                 GLB NX pte
+0xf876e000-0xf8775000          28K     RW                 GLB NX pte
+0xf8775000-0xf8776000           4K                               pte
+0xf8776000-0xf8783000          52K     ro                 GLB x  pte
+0xf8783000-0xf8785000           8K     ro                 GLB NX pte
+0xf8785000-0xf878b000          24K     RW                 GLB NX pte
+0xf878b000-0xf878c000           4K                               pte
+0xf878c000-0xf87a2000          88K     RW                 GLB NX pte
+0xf87a2000-0xf87a3000           4K                               pte
+0xf87a3000-0xf87bb000          96K     RW                 GLB NX pte
+0xf87bb000-0xf87bc000           4K                               pte
+0xf87bc000-0xf87bd000           4K     ro                 GLB NX pte
+0xf87bd000-0xf87be000           4K                               pte
+0xf87be000-0xf87bf000           4K     ro                 GLB NX pte
+0xf87bf000-0xf87c0000           4K                               pte
+0xf87c0000-0xf87e0000         128K     RW     PCD         GLB NX pte
+0xf87e0000-0xf87e1000           4K                               pte
+0xf87e1000-0xf88e1000           1M     RW                 GLB NX pte
+0xf88e1000-0xf88e2000           4K                               pte
+0xf88e2000-0xf8ab7000        1876K     RW                 GLB NX pte
+0xf8ab7000-0xf8ab8000           4K                               pte
+0xf8ab8000-0xf8cb8000           2M     RW                 GLB NX pte
+0xf8cb8000-0xf8cb9000           4K                               pte
+0xf8cb9000-0xf8cf9000         256K     RW                 GLB NX pte
+0xf8cf9000-0xf8cfa000           4K                               pte
+0xf8cfa000-0xf8d0d000          76K     RW                 GLB NX pte
+0xf8d0d000-0xf8d0e000           4K                               pte
+0xf8d0e000-0xf8d12000          16K     ro                 GLB x  pte
+0xf8d12000-0xf8d13000           4K     ro                 GLB NX pte
+0xf8d13000-0xf8d16000          12K     RW                 GLB NX pte
+0xf8d16000-0xf8d18000           8K                               pte
+0xf8d18000-0xf8d3b000         140K     ro                 GLB x  pte
+0xf8d3b000-0xf8d4d000          72K     ro                 GLB NX pte
+0xf8d4d000-0xf8d5f000          72K     RW                 GLB NX pte
+0xf8d5f000-0xf8d60000           4K                               pte
+0xf8d60000-0xf9c60000          15M     RW                 GLB NX pte
+0xf9c60000-0xf9c61000           4K                               pte
+0xf9c61000-0xf9d05000         656K     RW                 GLB NX pte
+0xf9d05000-0xf9d06000           4K                               pte
+0xf9d06000-0xf9d22000         112K     RW                 GLB NX pte
+0xf9d22000-0xf9d23000           4K                               pte
+0xf9d23000-0xf9d3f000         112K     RW                 GLB NX pte
+0xf9d3f000-0xf9d40000           4K                               pte
+0xf9d40000-0xf9d6d000         180K     RW                 GLB NX pte
+0xf9d6d000-0xf9d6e000           4K                               pte
+0xf9d6e000-0xf9d72000          16K     RW                 GLB NX pte
+0xf9d72000-0xf9d73000           4K                               pte
+0xf9d73000-0xf9d74000           4K     ro                 GLB NX pte
+0xf9d74000-0xf9d75000           4K                               pte
+0xf9d75000-0xf9d76000           4K     ro                 GLB NX pte
+0xf9d76000-0xf9d77000           4K                               pte
+0xf9d77000-0xf9d7a000          12K     RW                 GLB NX pte
+0xf9d7a000-0xf9d7b000           4K                               pte
+0xf9d7b000-0xf9d7e000          12K     RW                 GLB NX pte
+0xf9d7e000-0xf9d7f000           4K                               pte
+0xf9d7f000-0xf9d82000          12K     RW                 GLB NX pte
+0xf9d82000-0xf9d83000           4K                               pte
+0xf9d83000-0xf9d84000           4K     ro                 GLB NX pte
+0xf9d84000-0xf9d85000           4K                               pte
+0xf9d85000-0xf9d86000           4K     RW                 GLB NX pte
+0xf9d86000-0xf9d87000           4K                               pte
+0xf9d87000-0xf9d88000           4K     RW                 GLB NX pte
+0xf9d88000-0xf9d89000           4K                               pte
+0xf9d89000-0xf9d8a000           4K     ro                 GLB NX pte
+0xf9d8a000-0xf9d8b000           4K                               pte
+0xf9d8b000-0xf9d8c000           4K     ro                 GLB NX pte
+0xf9d8c000-0xf9d8d000           4K                               pte
+0xf9d8d000-0xf9d91000          16K     RW                 GLB NX pte
+0xf9d91000-0xf9d92000           4K                               pte
+0xf9d92000-0xf9d96000          16K     RW                 GLB NX pte
+0xf9d96000-0xf9d97000           4K                               pte
+0xf9d97000-0xf9d98000           4K     ro                 GLB NX pte
+0xf9d98000-0xf9d99000           4K                               pte
+0xf9d99000-0xf9d9f000          24K     RW                 GLB NX pte
+0xf9d9f000-0xf9da0000           4K                               pte
+0xf9da0000-0xf9da6000          24K     RW                 GLB NX pte
+0xf9da6000-0xf9dcd000         156K                               pte
+0xf9dcd000-0xf9dce000           4K     ro                 GLB NX pte
+0xf9dce000-0xf9de3000          84K                               pte
+0xf9de3000-0xf9de6000          12K     RW                 GLB NX pte
+0xf9de6000-0xf9de7000           4K                               pte
+0xf9de7000-0xf9dea000          12K     RW                 GLB NX pte
+0xf9dea000-0xf9dfb000          68K                               pte
+0xf9dfb000-0xf9dfe000          12K     RW                 GLB NX pte
+0xf9dfe000-0xf9dff000           4K                               pte
+0xf9dff000-0xf9e02000          12K     RW                 GLB NX pte
+0xf9e02000-0xf9e4b000         292K                               pte
+0xf9e4b000-0xf9e4e000          12K     RW                 GLB NX pte
+0xf9e4e000-0xf9e4f000           4K                               pte
+0xf9e4f000-0xf9e52000          12K     RW                 GLB NX pte
+0xf9e52000-0xf9e7b000         164K                               pte
+0xf9e7b000-0xf9e7e000          12K     RW                 GLB NX pte
+0xf9e7e000-0xf9e7f000           4K                               pte
+0xf9e7f000-0xf9e82000          12K     RW                 GLB NX pte
+0xf9e82000-0xf9e93000          68K                               pte
+0xf9e93000-0xf9e96000          12K     RW                 GLB NX pte
+0xf9e96000-0xf9e97000           4K                               pte
+0xf9e97000-0xf9e9a000          12K     RW                 GLB NX pte
+0xf9e9a000-0xf9ea3000          36K                               pte
+0xf9ea3000-0xf9ea6000          12K     RW                 GLB NX pte
+0xf9ea6000-0xf9ea7000           4K                               pte
+0xf9ea7000-0xf9eaa000          12K     RW                 GLB NX pte
+0xf9eaa000-0xf9ec6000         112K                               pte
+0xf9ec6000-0xf9ec9000          12K     RW                 GLB NX pte
+0xf9ec9000-0xf9eca000           4K                               pte
+0xf9eca000-0xf9ecd000          12K     RW                 GLB NX pte
+0xf9ecd000-0xf9ede000          68K                               pte
+0xf9ede000-0xf9ee1000          12K     RW                 GLB NX pte
+0xf9ee1000-0xf9ee2000           4K                               pte
+0xf9ee2000-0xf9ee5000          12K     RW                 GLB NX pte
+0xf9ee5000-0xf9eed000          32K                               pte
+0xf9eed000-0xf9ef0000          12K     RW                 GLB NX pte
+0xf9ef0000-0xf9ef1000           4K                               pte
+0xf9ef1000-0xf9ef4000          12K     RW                 GLB NX pte
+0xf9ef4000-0xf9f0e000         104K                               pte
+0xf9f0e000-0xf9f11000          12K     RW                 GLB NX pte
+0xf9f11000-0xf9f12000           4K                               pte
+0xf9f12000-0xf9f15000          12K     RW                 GLB NX pte
+0xf9f15000-0xf9f16000           4K                               pte
+0xf9f16000-0xf9f19000          12K     RW                 GLB NX pte
+0xf9f19000-0xf9f1a000           4K                               pte
+0xf9f1a000-0xf9f1d000          12K     RW                 GLB NX pte
+0xf9f1d000-0xf9f1e000           4K                               pte
+0xf9f1e000-0xf9f21000          12K     RW                 GLB NX pte
+0xf9f21000-0xf9f22000           4K                               pte
+0xf9f22000-0xf9f25000          12K     RW                 GLB NX pte
+0xf9f25000-0xf9f26000           4K                               pte
+0xf9f26000-0xf9f29000          12K     RW                 GLB NX pte
+0xf9f29000-0xf9f2a000           4K                               pte
+0xf9f2a000-0xf9f2d000          12K     RW                 GLB NX pte
+0xf9f2d000-0xf9f2e000           4K                               pte
+0xf9f2e000-0xf9f31000          12K     RW                 GLB NX pte
+0xf9f31000-0xf9f32000           4K                               pte
+0xf9f32000-0xf9f35000          12K     RW                 GLB NX pte
+0xf9f35000-0xf9f36000           4K                               pte
+0xf9f36000-0xf9f39000          12K     RW                 GLB NX pte
+0xf9f39000-0xf9f3a000           4K                               pte
+0xf9f3a000-0xf9f3d000          12K     RW                 GLB NX pte
+0xf9f3d000-0xf9f3e000           4K                               pte
+0xf9f3e000-0xf9f41000          12K     RW                 GLB NX pte
+0xf9f41000-0xf9f42000           4K                               pte
+0xf9f42000-0xf9f45000          12K     RW                 GLB NX pte
+0xf9f45000-0xf9f46000           4K                               pte
+0xf9f46000-0xf9f49000          12K     RW                 GLB NX pte
+0xf9f49000-0xf9f4a000           4K                               pte
+0xf9f4a000-0xf9f4d000          12K     RW                 GLB NX pte
+0xf9f4d000-0xf9f4e000           4K                               pte
+0xf9f4e000-0xf9f51000          12K     RW                 GLB NX pte
+0xf9f51000-0xf9f52000           4K                               pte
+0xf9f52000-0xf9f55000          12K     RW                 GLB NX pte
+0xf9f55000-0xf9f69000          80K                               pte
+0xf9f69000-0xf9f6a000           4K     ro                 GLB NX pte
+0xf9f6a000-0xfa400000        4696K                               pte
+0xfa400000-0xffa00000          86M                               pmd
+0xffa00000-0xffb66000        1432K                               pte
+0xffb66000-0xffb6c000          24K     RW                 GLB NX pte
+0xffb6c000-0xffb79000          52K                               pte
+0xffb79000-0xffb7f000          24K     RW                 GLB NX pte
+0xffb7f000-0xffb8c000          52K                               pte
+0xffb8c000-0xffb92000          24K     RW                 GLB NX pte
+0xffb92000-0xffb9f000          52K                               pte
+0xffb9f000-0xffba5000          24K     RW                 GLB NX pte
+0xffba5000-0xffbb2000          52K                               pte
+0xffbb2000-0xffbb8000          24K     RW                 GLB NX pte
+0xffbb8000-0xffbc5000          52K                               pte
+0xffbc5000-0xffbcb000          24K     RW                 GLB NX pte
+0xffbcb000-0xffbd8000          52K                               pte
+0xffbd8000-0xffbde000          24K     RW                 GLB NX pte
+0xffbde000-0xffbeb000          52K                               pte
+0xffbeb000-0xffbf1000          24K     RW                 GLB NX pte
+0xffbf1000-0xffbfe000          52K                               pte
+---[ vmalloc() End ]---
+0xffbfe000-0xffc00000           8K                               pte
+---[ Persistent kmap() Area ]---
+0xffc00000-0xffdc1000        1796K                               pte
+0xffdc1000-0xffdc6000          20K     RW                 GLB NX pte
+0xffdc6000-0xfff15000        1340K                               pte
+---[ Fixmap Area ]---
+0xfff15000-0xfff1a000          20K                               pte
+0xfff1a000-0xfff1b000           4K     RW PWT PCD         GLB NX pte
+0xfff1b000-0xfffbb000         640K                               pte
+0xfffbb000-0xfffbc000           4K     ro                 GLB NX pte
+0xfffbc000-0xffffb000         252K                               pte
+0xffffb000-0xffffd000           8K     RW PWT PCD         GLB NX pte
+0xffffd000-0x00000000          12K                               pte
